@@ -1,0 +1,249 @@
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #f0e68c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.book-author,
+.book-rating {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.book-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.book-details button:hover {
+  background-color: #0056b3;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Asegura la distribución horizontal */
+  gap: 20px; /* Espacio entre elementos */
+  margin: 20px; /* Margen alrededor del contenedor */
+}
+
+.book-container > * {
+  flex: 1 1 40%; /* Cada elemento ocupa aproximadamente el 40% del contenedor */
+  max-width: 40%; /* Limita el ancho máximo a un 40% */
+  margin: 10px; /* Espaciado adicional entre elementos */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.search-bar {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #f0e68c;
+}
+
+.search-bar input::placeholder {
+  color: #888;
+}
+
+.card div {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+
+.navbar h1 {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #f0e68c;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 6px;
+  margin-left: 5px;
+  line-height: 1;
+}
+
+
+.cart {
+  max-width: 600px; 
+  margin: 20px auto; 
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  color: #f0e68c;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-title {
+  flex: 1;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+
+.header {
+  background-color: #222;
+  padding: 10px;
+  color: #f0e68c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; 
+  top: 0;
+  z-index: 1000; 
+}
+
+/* Contenedor de los libros */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  color: #f0e68c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+/* Contenedor del icono */
+.book-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 150px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Contenedor de información del libro */
+.book-info {
+  flex: 1;
+}
+
+/* Botones */
+.card div {
+  display: flex;
+  gap: 10px; /* Espaciado entre botones */
+  margin-top: 10px;
+}
